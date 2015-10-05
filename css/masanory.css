@@ -1,0 +1,155 @@
+#main {
+  margin:50px 0 30px;
+  position: relative;
+}
+
+/**
+ * Grid container
+ */
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+  padding: 0px;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p a {
+  	color: #000;
+	font-size: 15px;
+	line-height: 20px;
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-weight: 400;
+	margin: 3% 3% 3% 6%;
+}
+#tiles li p a span{
+	color:#666;
+	font-weight: 300;
+	font-size: 14px;
+}
+#tiles li:hover{
+	border: 1px solid #739b3d;
+}
+#tiles li:hover p a{
+	color:#739b3d;
+	font-weight:600;
+}
+#tiles li:hover p a span{
+	color: #666;
+	font-weight: 300;
+}
+/**
+ * Progress bar for imagesLoaded
+ */
+.progress-bar {
+  background-color: #0BC20B;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  box-shadow: 0 1px 3px rgba(11, 194, 11, 0.2);
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+}
+
+/**
+ * Placerholder css
+ */
+.wookmark-placeholder {
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  /*background-color: #eee;
+  border: 1px solid #dedede;*/
+  z-index: -1;
+}
+
+.example-tiles {
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+.example-tiles li {
+  display: block;
+  opacity: 1;
+  list-style-type: none;
+  float: left;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.example-tiles a,
+.example-tiles a:hover {
+  color: #555;
+  background-color: #eee;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.example-tiles a:hover {
+  background-color: #ddd;
+}
+
+@media only screen and (max-width: 1024px){
+	
+}
+@media only screen and (max-width: 995px){
+	
+}
+@media only screen and (max-width: 767px) {
+	#main{
+		margin:30px 0 30px;
+	}
+
+}
+@media only screen and (max-width: 479px) {
+	#main {
+		margin: 30px 0 30px;
+	}
+}

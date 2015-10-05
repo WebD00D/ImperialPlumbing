@@ -1,0 +1,90 @@
+#main {
+  overflow: hidden; width:100%; float:left;
+}
+
+/**
+ * Grid items animation
+ */
+#tiles li {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.wookmark-placeholder {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+/**
+ * Filters
+ */
+#filters {
+    list-style-type: none;
+	text-align: center;
+	margin:0 auto;
+	width:1074px;
+	-moz-padding-start: 0px !important;
+	-webkit-padding-start: 0px !important;
+	-0-padding-start: 0px !important;
+	-ms-padding-start: 0px !important;
+}
+
+#filters li {
+  font-size: 15px;
+  float: left;
+  padding: 8px 18px;
+  margin: 0 8px;
+  width: auto; border:#fff 1px solid; color:#fff;
+  cursor:pointer;
+  -webkit-transition: all 0.15s ease-out;
+     -moz-transition: all 0.15s ease-out;
+       -o-transition: all 0.15s ease-out;
+          transition: all 0.15s ease-out;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+#filters li:hover {
+  background: #14416b;
+  color: #ffffff;
+}
+
+#filters li.active {
+  background: #14416b;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px){
+	#filters{ float:left;
+		margin: 3% 0% 1% 0%; width:100%; 
+	}
+	#filters li{padding:8px 12px; margin:0 7px;}
+}
+@media only screen and (max-width: 995px){
+	#filters li{padding:8px 9px; margin:0 4px; font-size:12px;}
+	
+}
+@media only screen and (min-width:768px) and (max-width: 768px) {
+}
+@media only screen and (max-width: 767px) {
+	#filters{
+		margin:3% 0% 1% 5%;
+		 width:100%;
+	}
+	#filters li{
+		padding: 4px 14px;
+		margin: 2px 1%;
+		width: 38%;
+	}
+}
+@media only screen and (max-width: 479px) {
+	
+	#filters li {
+		width: 36%; font-size:11px; line-height:20px;
+	}
+}
